@@ -8,12 +8,13 @@
 import UIKit
 
 final class AppCoordinator: Coordinator {
-
     var childCoordinators = [Coordinator]()
     private let navigationController: UINavigationController
+    private let favoritesManager: FavoritesManager
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        self.favoritesManager = FavoritesManager() // Initialize the shared manager here
     }
 
     func start() {
@@ -29,7 +30,10 @@ final class AppCoordinator: Coordinator {
     }
 
     private func showMainFlow() {
-        let mainCoordinator = MainCoordinator(navigationController: navigationController)
+        let mainCoordinator = TabBarCoordinator(
+            navigationController: navigationController,
+            favoritesManager: favoritesManager
+        )
         childCoordinators.append(mainCoordinator)
         mainCoordinator.start()
     }

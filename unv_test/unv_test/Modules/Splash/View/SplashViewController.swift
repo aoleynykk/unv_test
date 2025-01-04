@@ -24,7 +24,13 @@ class SplashViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-        super.view = mainView
+        super.viewDidLoad()
+        view = mainView
+        initViewControlller()
+
+    }
+
+    private func initViewControlller() {
         bindViewModel()
         viewModel.loadData()
     }
