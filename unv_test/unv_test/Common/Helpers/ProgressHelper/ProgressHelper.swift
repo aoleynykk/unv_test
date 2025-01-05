@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class ProgressHelper: NSObject {
+
     static var progressView: ProgressHelperView?
 
     static func show() {

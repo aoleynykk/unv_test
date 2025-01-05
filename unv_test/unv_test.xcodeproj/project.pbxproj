@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		1146F5272D27D8750020DA31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5262D27D8750020DA31 /* AppDelegate.swift */; };
 		1146F52B2D27D8750020DA31 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F52A2D27D8750020DA31 /* SplashViewController.swift */; };
-		1146F5302D27D8770020DA31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1146F52F2D27D8770020DA31 /* Images.xcassets */; };
 		1146F5332D27D8770020DA31 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1146F5322D27D8770020DA31 /* Base */; };
 		1146F5402D27E15C0020DA31 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1146F53F2D27E15C0020DA31 /* Colors.xcassets */; };
-		1146F5442D27E1860020DA31 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5432D27E1860020DA31 /* SplashView.swift */; };
 		1146F5472D27E1A20020DA31 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1146F5462D27E1A20020DA31 /* SnapKit */; };
 		1146F54B2D27E3610020DA31 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F54A2D27E3610020DA31 /* SplashViewModel.swift */; };
 		1146F54E2D27E4110020DA31 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1146F54D2D27E4110020DA31 /* RxCocoa */; };
@@ -21,59 +19,51 @@
 		1146F5562D27E6550020DA31 /* ProgressHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5552D27E6550020DA31 /* ProgressHelper.swift */; };
 		1146F5592D27E6CC0020DA31 /* Color + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5582D27E6CC0020DA31 /* Color + ext.swift */; };
 		1146F55B2D27E76A0020DA31 /* Float + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F55A2D27E76A0020DA31 /* Float + ext.swift */; };
-		1146F55E2D27E8830020DA31 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F55D2D27E8830020DA31 /* MainViewController.swift */; };
 		1146F5602D27EA6E0020DA31 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F55F2D27EA6E0020DA31 /* Coordinator.swift */; };
 		1146F5622D27EA850020DA31 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5612D27EA850020DA31 /* AppCoordinator.swift */; };
 		1146F5652D27EA9E0020DA31 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5642D27EA9E0020DA31 /* SplashCoordinator.swift */; };
-		1146F5682D27EB050020DA31 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5672D27EB050020DA31 /* MainCoordinator.swift */; };
 		1146F56A2D2877CF0020DA31 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5692D2877CF0020DA31 /* TabBarCoordinator.swift */; };
-		1146F56D2D28786E0020DA31 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F56C2D28786E0020DA31 /* ListCoordinator.swift */; };
-		1146F56F2D2878850020DA31 /* FavouritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F56E2D2878850020DA31 /* FavouritesCoordinator.swift */; };
-		1146F5782D2879240020DA31 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5772D2879240020DA31 /* ListViewController.swift */; };
-		1146F57B2D28794B0020DA31 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F57A2D28794B0020DA31 /* ListViewModel.swift */; };
-		1146F57E2D287C9E0020DA31 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F57D2D287C9E0020DA31 /* FavouritesViewController.swift */; };
-		1146F5812D287CC50020DA31 /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5802D287CC50020DA31 /* FavouritesViewModel.swift */; };
-		1146F5832D28816A0020DA31 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5822D28816A0020DA31 /* ListView.swift */; };
 		1146F5862D2883070020DA31 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5852D2883070020DA31 /* ListTableViewCell.swift */; };
 		1146F5892D2888840020DA31 /* Reusable + Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5882D2888840020DA31 /* Reusable + Cell.swift */; };
 		1146F58C2D28991E0020DA31 /* ListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F58B2D28991E0020DA31 /* ListCellModel.swift */; };
 		1146F58F2D28A86C0020DA31 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F58E2D28A86C0020DA31 /* AlertHelper.swift */; };
 		1146F5912D28A8F30020DA31 /* UIApplication + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5902D28A8F30020DA31 /* UIApplication + ext.swift */; };
+		11CCBAD02D29F5E6007FA293 /* SharedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCBACF2D29F5E6007FA293 /* SharedListViewModel.swift */; };
+		11CCBAD32D29F66D007FA293 /* SharedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCBAD22D29F66D007FA293 /* SharedListView.swift */; };
+		11CCBAD52D29F8F3007FA293 /* SharedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCBAD42D29F8F3007FA293 /* SharedListViewController.swift */; };
+		11CCBADA2D2A0313007FA293 /* SharedListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCBAD92D2A0313007FA293 /* SharedListCoordinator.swift */; };
+		11CCBADE2D2A16C2007FA293 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11CCBADD2D2A16C2007FA293 /* Images.xcassets */; };
+		11CCBAE02D2A1AC9007FA293 /* ListScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCBADF2D2A1AC9007FA293 /* ListScreenState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1146F5232D27D8750020DA31 /* unv_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unv_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1146F5262D27D8750020DA31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1146F52A2D27D8750020DA31 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		1146F52F2D27D8770020DA31 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1146F5322D27D8770020DA31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1146F5342D27D8770020DA31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1146F53F2D27E15C0020DA31 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		1146F5432D27E1860020DA31 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		1146F54A2D27E3610020DA31 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		1146F5512D27E6490020DA31 /* ProgressHelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHelperView.swift; sourceTree = "<group>"; };
 		1146F5532D27E6500020DA31 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		1146F5552D27E6550020DA31 /* ProgressHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHelper.swift; sourceTree = "<group>"; };
 		1146F5582D27E6CC0020DA31 /* Color + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + ext.swift"; sourceTree = "<group>"; };
 		1146F55A2D27E76A0020DA31 /* Float + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float + ext.swift"; sourceTree = "<group>"; };
-		1146F55D2D27E8830020DA31 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1146F55F2D27EA6E0020DA31 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		1146F5612D27EA850020DA31 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		1146F5642D27EA9E0020DA31 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
-		1146F5672D27EB050020DA31 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		1146F5692D2877CF0020DA31 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
-		1146F56C2D28786E0020DA31 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
-		1146F56E2D2878850020DA31 /* FavouritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesCoordinator.swift; sourceTree = "<group>"; };
-		1146F5772D2879240020DA31 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		1146F57A2D28794B0020DA31 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
-		1146F57D2D287C9E0020DA31 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
-		1146F5802D287CC50020DA31 /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
-		1146F5822D28816A0020DA31 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		1146F5852D2883070020DA31 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		1146F5882D2888840020DA31 /* Reusable + Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable + Cell.swift"; sourceTree = "<group>"; };
 		1146F58B2D28991E0020DA31 /* ListCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellModel.swift; sourceTree = "<group>"; };
 		1146F58E2D28A86C0020DA31 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		1146F5902D28A8F30020DA31 /* UIApplication + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + ext.swift"; sourceTree = "<group>"; };
+		11CCBACF2D29F5E6007FA293 /* SharedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListViewModel.swift; sourceTree = "<group>"; };
+		11CCBAD22D29F66D007FA293 /* SharedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListView.swift; sourceTree = "<group>"; };
+		11CCBAD42D29F8F3007FA293 /* SharedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListViewController.swift; sourceTree = "<group>"; };
+		11CCBAD92D2A0313007FA293 /* SharedListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SharedListCoordinator.swift; path = ../../../../../../Documents/SharedListCoordinator.swift; sourceTree = "<group>"; };
+		11CCBADD2D2A16C2007FA293 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		11CCBADF2D2A1AC9007FA293 /* ListScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListScreenState.swift; path = unv_test/Resourses/Assets/ListScreenState.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +112,8 @@
 		1146F53A2D27E12E0020DA31 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1146F55C2D27E87B0020DA31 /* Main */,
+				11CCBACD2D29F5D5007FA293 /* Main */,
+				1146F5702D2878990020DA31 /* TabBar */,
 				1146F5412D27E16C0020DA31 /* Splash */,
 			);
 			path = Modules;
@@ -157,7 +148,7 @@
 		1146F53E2D27E14E0020DA31 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				1146F52F2D27D8770020DA31 /* Images.xcassets */,
+				11CCBADD2D2A16C2007FA293 /* Images.xcassets */,
 				1146F53F2D27E15C0020DA31 /* Colors.xcassets */,
 			);
 			path = Assets;
@@ -176,7 +167,6 @@
 		1146F5422D27E1770020DA31 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1146F5432D27E1860020DA31 /* SplashView.swift */,
 				1146F52A2D27D8750020DA31 /* SplashViewController.swift */,
 			);
 			path = View;
@@ -228,16 +218,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		1146F55C2D27E87B0020DA31 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				1146F5722D2878B60020DA31 /* Favourites */,
-				1146F5712D2878AD0020DA31 /* List */,
-				1146F5702D2878990020DA31 /* TabBar */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		1146F5632D27EA930020DA31 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,7 +229,6 @@
 		1146F5662D27EAFD0020DA31 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				1146F5672D27EB050020DA31 /* MainCoordinator.swift */,
 				1146F5692D2877CF0020DA31 /* TabBarCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -259,96 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				1146F5662D27EAFD0020DA31 /* Coordinator */,
-				1146F5752D2879080020DA31 /* View */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		1146F5712D2878AD0020DA31 /* List */ = {
-			isa = PBXGroup;
-			children = (
-				1146F58A2D2899180020DA31 /* Model */,
-				1146F5792D2879450020DA31 /* ViewModel */,
-				1146F5762D2879110020DA31 /* View */,
-				1146F5742D2878EC0020DA31 /* Coordinator */,
-			);
-			path = List;
-			sourceTree = "<group>";
-		};
-		1146F5722D2878B60020DA31 /* Favourites */ = {
-			isa = PBXGroup;
-			children = (
-				1146F57F2D287CBD0020DA31 /* ViewModel */,
-				1146F57C2D287C8F0020DA31 /* View */,
-				1146F5732D2878C70020DA31 /* Coordinator */,
-			);
-			path = Favourites;
-			sourceTree = "<group>";
-		};
-		1146F5732D2878C70020DA31 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				1146F56E2D2878850020DA31 /* FavouritesCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		1146F5742D2878EC0020DA31 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				1146F56C2D28786E0020DA31 /* ListCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		1146F5752D2879080020DA31 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1146F55D2D27E8830020DA31 /* MainViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1146F5762D2879110020DA31 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1146F5842D2882FE0020DA31 /* Cell */,
-				1146F5772D2879240020DA31 /* ListViewController.swift */,
-				1146F5822D28816A0020DA31 /* ListView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1146F5792D2879450020DA31 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				1146F57A2D28794B0020DA31 /* ListViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		1146F57C2D287C8F0020DA31 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1146F57D2D287C9E0020DA31 /* FavouritesViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1146F57F2D287CBD0020DA31 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				1146F5802D287CC50020DA31 /* FavouritesViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		1146F5842D2882FE0020DA31 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				1146F5852D2883070020DA31 /* ListTableViewCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		1146F5872D2888780020DA31 /* Protocols */ = {
@@ -359,20 +250,66 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		1146F58A2D2899180020DA31 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				1146F58B2D28991E0020DA31 /* ListCellModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		1146F58D2D28A8620020DA31 /* AlertHelper */ = {
 			isa = PBXGroup;
 			children = (
 				1146F58E2D28A86C0020DA31 /* AlertHelper.swift */,
 			);
 			path = AlertHelper;
+			sourceTree = "<group>";
+		};
+		11CCBACD2D29F5D5007FA293 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				11CCBAD62D2A0198007FA293 /* Model */,
+				11CCBAD12D29F65F007FA293 /* View */,
+				11CCBACE2D29F5DB007FA293 /* ViewModel */,
+				11CCBAD82D2A0307007FA293 /* Coordinator */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		11CCBACE2D29F5DB007FA293 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11CCBACF2D29F5E6007FA293 /* SharedListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11CCBAD12D29F65F007FA293 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11CCBAD72D2A01F3007FA293 /* Cell */,
+				11CCBAD22D29F66D007FA293 /* SharedListView.swift */,
+				11CCBAD42D29F8F3007FA293 /* SharedListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11CCBAD62D2A0198007FA293 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1146F58B2D28991E0020DA31 /* ListCellModel.swift */,
+				11CCBADF2D2A1AC9007FA293 /* ListScreenState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11CCBAD72D2A01F3007FA293 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1146F5852D2883070020DA31 /* ListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		11CCBAD82D2A0307007FA293 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				11CCBAD92D2A0313007FA293 /* SharedListCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,8 +378,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CCBADE2D2A16C2007FA293 /* Images.xcassets in Resources */,
 				1146F5402D27E15C0020DA31 /* Colors.xcassets in Resources */,
-				1146F5302D27D8770020DA31 /* Images.xcassets in Resources */,
 				1146F5332D27D8770020DA31 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,30 +394,25 @@
 				1146F58F2D28A86C0020DA31 /* AlertHelper.swift in Sources */,
 				1146F5622D27EA850020DA31 /* AppCoordinator.swift in Sources */,
 				1146F58C2D28991E0020DA31 /* ListCellModel.swift in Sources */,
-				1146F5682D27EB050020DA31 /* MainCoordinator.swift in Sources */,
 				1146F5862D2883070020DA31 /* ListTableViewCell.swift in Sources */,
 				1146F5652D27EA9E0020DA31 /* SplashCoordinator.swift in Sources */,
+				11CCBAE02D2A1AC9007FA293 /* ListScreenState.swift in Sources */,
 				1146F52B2D27D8750020DA31 /* SplashViewController.swift in Sources */,
 				1146F55B2D27E76A0020DA31 /* Float + ext.swift in Sources */,
 				1146F5272D27D8750020DA31 /* AppDelegate.swift in Sources */,
-				1146F5442D27E1860020DA31 /* SplashView.swift in Sources */,
-				1146F56D2D28786E0020DA31 /* ListCoordinator.swift in Sources */,
-				1146F5832D28816A0020DA31 /* ListView.swift in Sources */,
-				1146F57E2D287C9E0020DA31 /* FavouritesViewController.swift in Sources */,
+				11CCBAD02D29F5E6007FA293 /* SharedListViewModel.swift in Sources */,
 				1146F54B2D27E3610020DA31 /* SplashViewModel.swift in Sources */,
+				11CCBAD52D29F8F3007FA293 /* SharedListViewController.swift in Sources */,
+				11CCBADA2D2A0313007FA293 /* SharedListCoordinator.swift in Sources */,
+				11CCBAD32D29F66D007FA293 /* SharedListView.swift in Sources */,
 				1146F56A2D2877CF0020DA31 /* TabBarCoordinator.swift in Sources */,
-				1146F5812D287CC50020DA31 /* FavouritesViewModel.swift in Sources */,
 				1146F5892D2888840020DA31 /* Reusable + Cell.swift in Sources */,
 				1146F5562D27E6550020DA31 /* ProgressHelper.swift in Sources */,
 				1146F5602D27EA6E0020DA31 /* Coordinator.swift in Sources */,
 				1146F5912D28A8F30020DA31 /* UIApplication + ext.swift in Sources */,
 				1146F5542D27E6500020DA31 /* ActivityIndicator.swift in Sources */,
-				1146F56F2D2878850020DA31 /* FavouritesCoordinator.swift in Sources */,
-				1146F57B2D28794B0020DA31 /* ListViewModel.swift in Sources */,
-				1146F5782D2879240020DA31 /* ListViewController.swift in Sources */,
 				1146F5522D27E6490020DA31 /* ProgressHelperView.swift in Sources */,
 				1146F5592D27E6CC0020DA31 /* Color + ext.swift in Sources */,
-				1146F55E2D27E8830020DA31 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

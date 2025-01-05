@@ -11,7 +11,9 @@ import RxSwift
 final class SplashCoordinator: Coordinator {
 
     var childCoordinators = [Coordinator]()
+
     private let navigationController: UINavigationController
+    
     private let disposeBag = DisposeBag()
 
     var onFinish: (() -> Void)?
@@ -24,15 +26,18 @@ final class SplashCoordinator: Coordinator {
         let viewModel = SplashViewModel()
         let splashViewController = SplashViewController(viewModel: viewModel)
 
+        bindViewModel(viewModel)
+
+        navigationController.setViewControllers([splashViewController], animated: false)
+        viewModel.loadData()
+    }
+
+    private func bindViewModel(_ viewModel: SplashViewModel) {
         viewModel.isLoadingFinished
             .observe(on: MainScheduler.instance)
             .subscribe(onCompleted: { [weak self] in
                 self?.onFinish?()
             })
             .disposed(by: disposeBag)
-
-        navigationController.setViewControllers([splashViewController], animated: false)
-
-        viewModel.loadData()
     }
 }

@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class AlertHelper: NSObject {
+
     class func showForTime(title: String?, for time: Double = 0.5) {
         guard let title = title, let vc = UIApplication.topViewController() else {
             return
@@ -22,5 +23,24 @@ class AlertHelper: NSObject {
                 alertController.dismiss(animated: true, completion: nil)
             })
         })
+    }
+
+    class func show(message: String?, controller: UIViewController?) {
+
+        guard let title = message, let vc = controller else {
+            return
+        }
+
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "ok", style: .cancel, handler: nil))
+        alertController.view.tintColor = .white
+
+        vc.present(alertController,animated: true, completion: nil)
+    }
+
+    class func show(message: String) {
+        if let topController = UIApplication.topViewController() {
+            show(message: message, controller: topController)
+        }
     }
 }

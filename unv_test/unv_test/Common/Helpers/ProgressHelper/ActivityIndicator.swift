@@ -97,7 +97,7 @@ class ActivityIndicator: UIView {
                             clockwise: true)
 
         path.lineWidth = lineWidth
-        UIColor.theme(.green).setStroke()
+        UIColor.theme(.blue).setStroke()
         path.stroke()
     }
 }

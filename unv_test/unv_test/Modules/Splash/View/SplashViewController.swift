@@ -10,8 +10,8 @@ import RxSwift
 
 class SplashViewController: UIViewController {
 
-    private let mainView = SplashView()
     private let viewModel: SplashViewModel
+   
     private let disposeBag = DisposeBag()
 
     init(viewModel: SplashViewModel) {
@@ -25,17 +25,22 @@ class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view = mainView
-        initViewControlller()
-
+        view.backgroundColor = .white
+        setupBindings()
     }
 
-    private func initViewControlller() {
-        bindViewModel()
-        viewModel.loadData()
-    }
+    private func setupBindings() {
+        viewModel.isLoading
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] isLoading in
+                if isLoading {
+                    ProgressHelper.show()
+                } else {
+                    ProgressHelper.hide()
+                }
+            })
+            .disposed(by: disposeBag)
 
-    private func bindViewModel() {
         viewModel.isLoadingFinished
             .observe(on: MainScheduler.instance)
             .subscribe(onCompleted: { [weak self] in
@@ -44,17 +49,7 @@ class SplashViewController: UIViewController {
             .disposed(by: disposeBag)
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        ProgressHelper.show()
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        ProgressHelper.hide()
-    }
-
     private func handleLoadingFinished() {
-        print("Splash loading finished in controller")
+        print("Splash loading finished!!")
     }
 }

@@ -16,6 +16,8 @@ class ListTableViewCell: UITableViewCell, Reusable {
         }
     }
 
+    var state: ListScreenState?
+
     override var isSelected: Bool {
         didSet {
             handleIsSelected()
@@ -24,27 +26,24 @@ class ListTableViewCell: UITableViewCell, Reusable {
 
     private let containerView: UIView = {
         let obj = UIView()
-        obj.backgroundColor = .lightGray
+        obj.backgroundColor = .theme(.lightGray)
         obj.clipsToBounds = true
-        obj.layer.borderColor = UIColor.black.cgColor
         return obj
     }()
 
     private let titleLabel: UILabel = {
         let obj = UILabel()
-        obj.textColor = .black
-        obj.text = "TEST Test test"
-        obj.numberOfLines = 0
+        obj.textColor = .theme(.darkGray)
         obj.textAlignment = .left
+        obj.font = .systemFont(ofSize: 17, weight: .regular)
         return obj
     }()
 
     private let descriptionLabel: UILabel = {
         let obj = UILabel()
-        obj.textColor = .black
-        obj.text = "TEST Test test"
-        obj.numberOfLines = 0
+        obj.textColor = .theme(.gray)
         obj.textAlignment = .left
+        obj.font = .systemFont(ofSize: 15, weight: .regular)
         return obj
     }()
 
@@ -62,12 +61,12 @@ class ListTableViewCell: UITableViewCell, Reusable {
         return obj
     }()
 
-    private let favoriteImageView: UIImageView = {
-         let imageView = UIImageView()
-         imageView.translatesAutoresizingMaskIntoConstraints = false
-         imageView.tintColor = .yellow
-         return imageView
-     }()
+    private let favouriteImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.tintColor = .theme(.yellow)
+        imageView.image = UIImage(systemName: "star.fill")
+        return imageView
+    }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -93,7 +92,7 @@ class ListTableViewCell: UITableViewCell, Reusable {
         contentView.addSubview(containerView)
         containerView.addSubview(testView)
         containerView.addSubview(stackView)
-        containerView.addSubview(favoriteImageView)
+        containerView.addSubview(favouriteImageView)
 
         containerView.snp.makeConstraints { make in
             make.horizontalEdges.equalToSuperview().inset(8)
@@ -111,7 +110,7 @@ class ListTableViewCell: UITableViewCell, Reusable {
             make.verticalEdges.equalTo(testView)
         }
 
-        favoriteImageView.snp.makeConstraints { make in
+        favouriteImageView.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.trailing.equalToSuperview().offset(-16)
         }
@@ -123,10 +122,11 @@ extension ListTableViewCell {
         guard let model else { return }
         titleLabel.text = model.title
         descriptionLabel.text = model.description
-        favoriteImageView.image = UIImage(systemName: model.isFavorite ? "star.fill" : "star")
+        favouriteImageView.isHidden = !model.isFavourite
     }
 
     private func handleIsSelected() {
         containerView.layer.borderWidth = isSelected ? 2 : 0
+        containerView.layer.borderColor = state == .allItems ? UIColor.theme(.yellow).cgColor : UIColor.theme(.red).cgColor
     }
 }

@@ -11,5 +11,5 @@ struct ListCellModel: Hashable {
     let id = UUID.init()
     let title: String
     let description: String
-    var isFavorite: Bool = false
+    var isFavourite: Bool = false
 }

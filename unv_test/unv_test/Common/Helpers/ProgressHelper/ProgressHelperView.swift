@@ -12,7 +12,7 @@ class ProgressHelperView: UIView {
 
     var activityIndicator: ActivityIndicator = {
         let obj = ActivityIndicator()
-        obj.tintColor = .theme(.green)
+        obj.tintColor = .theme(.blue)
         obj.translatesAutoresizingMaskIntoConstraints = false
         return obj
     }()
@@ -28,7 +28,7 @@ class ProgressHelperView: UIView {
     }
 
     private func setup() {
-        backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        backgroundColor = UIColor.black.withAlphaComponent(0.2)
 
         addSubview(activityIndicator)
 
