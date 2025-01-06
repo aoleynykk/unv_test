@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114330BA2D2C04B800BDF67C /* SharedListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114330B92D2C04B800BDF67C /* SharedListCoordinator.swift */; };
 		1146F5272D27D8750020DA31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F5262D27D8750020DA31 /* AppDelegate.swift */; };
 		1146F52B2D27D8750020DA31 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1146F52A2D27D8750020DA31 /* SplashViewController.swift */; };
 		1146F5332D27D8770020DA31 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1146F5322D27D8770020DA31 /* Base */; };
@@ -31,12 +32,12 @@
 		11CCBAD02D29F5E6007FA293 /* SharedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCBACF2D29F5E6007FA293 /* SharedListViewModel.swift */; };
 		11CCBAD32D29F66D007FA293 /* SharedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCBAD22D29F66D007FA293 /* SharedListView.swift */; };
 		11CCBAD52D29F8F3007FA293 /* SharedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCBAD42D29F8F3007FA293 /* SharedListViewController.swift */; };
-		11CCBADA2D2A0313007FA293 /* SharedListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCBAD92D2A0313007FA293 /* SharedListCoordinator.swift */; };
 		11CCBADE2D2A16C2007FA293 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11CCBADD2D2A16C2007FA293 /* Images.xcassets */; };
 		11CCBAE02D2A1AC9007FA293 /* ListScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CCBADF2D2A1AC9007FA293 /* ListScreenState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		114330B92D2C04B800BDF67C /* SharedListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListCoordinator.swift; sourceTree = "<group>"; };
 		1146F5232D27D8750020DA31 /* unv_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unv_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1146F5262D27D8750020DA31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1146F52A2D27D8750020DA31 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		11CCBACF2D29F5E6007FA293 /* SharedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListViewModel.swift; sourceTree = "<group>"; };
 		11CCBAD22D29F66D007FA293 /* SharedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListView.swift; sourceTree = "<group>"; };
 		11CCBAD42D29F8F3007FA293 /* SharedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedListViewController.swift; sourceTree = "<group>"; };
-		11CCBAD92D2A0313007FA293 /* SharedListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SharedListCoordinator.swift; path = ../../../../../../Documents/SharedListCoordinator.swift; sourceTree = "<group>"; };
 		11CCBADD2D2A16C2007FA293 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		11CCBADF2D2A1AC9007FA293 /* ListScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListScreenState.swift; path = unv_test/Resourses/Assets/ListScreenState.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -79,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114330B82D2C04A900BDF67C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				114330B92D2C04B800BDF67C /* SharedListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		1146F51A2D27D8750020DA31 = {
 			isa = PBXGroup;
 			children = (
@@ -264,7 +272,7 @@
 				11CCBAD62D2A0198007FA293 /* Model */,
 				11CCBAD12D29F65F007FA293 /* View */,
 				11CCBACE2D29F5DB007FA293 /* ViewModel */,
-				11CCBAD82D2A0307007FA293 /* Coordinator */,
+				114330B82D2C04A900BDF67C /* Coordinator */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -302,14 +310,6 @@
 				1146F5852D2883070020DA31 /* ListTableViewCell.swift */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		11CCBAD82D2A0307007FA293 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				11CCBAD92D2A0313007FA293 /* SharedListCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +396,7 @@
 				1146F58C2D28991E0020DA31 /* ListCellModel.swift in Sources */,
 				1146F5862D2883070020DA31 /* ListTableViewCell.swift in Sources */,
 				1146F5652D27EA9E0020DA31 /* SplashCoordinator.swift in Sources */,
+				114330BA2D2C04B800BDF67C /* SharedListCoordinator.swift in Sources */,
 				11CCBAE02D2A1AC9007FA293 /* ListScreenState.swift in Sources */,
 				1146F52B2D27D8750020DA31 /* SplashViewController.swift in Sources */,
 				1146F55B2D27E76A0020DA31 /* Float + ext.swift in Sources */,
@@ -403,7 +404,6 @@
 				11CCBAD02D29F5E6007FA293 /* SharedListViewModel.swift in Sources */,
 				1146F54B2D27E3610020DA31 /* SplashViewModel.swift in Sources */,
 				11CCBAD52D29F8F3007FA293 /* SharedListViewController.swift in Sources */,
-				11CCBADA2D2A0313007FA293 /* SharedListCoordinator.swift in Sources */,
 				11CCBAD32D29F66D007FA293 /* SharedListView.swift in Sources */,
 				1146F56A2D2877CF0020DA31 /* TabBarCoordinator.swift in Sources */,
 				1146F5892D2888840020DA31 /* Reusable + Cell.swift in Sources */,

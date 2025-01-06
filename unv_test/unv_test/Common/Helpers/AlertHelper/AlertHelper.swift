@@ -33,7 +33,7 @@ class AlertHelper: NSObject {
 
         let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "ok", style: .cancel, handler: nil))
-        alertController.view.tintColor = .white
+        alertController.view.tintColor = .black
 
         vc.present(alertController,animated: true, completion: nil)
     }

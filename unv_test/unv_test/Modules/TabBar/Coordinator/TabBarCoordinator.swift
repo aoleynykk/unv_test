@@ -12,11 +12,11 @@ import RxSwift
 final class TabBarCoordinator: NSObject, Coordinator {
 
     var childCoordinators = [Coordinator]()
-
+    
     private let navigationController: UINavigationController
-   
+    
     private var tabBarController: UITabBarController?
-
+    
     private let sharedViewModel: SharedListViewModel
 
     init(navigationController: UINavigationController, sharedViewModel: SharedListViewModel = SharedListViewModel()) {
@@ -29,6 +29,7 @@ final class TabBarCoordinator: NSObject, Coordinator {
 
         let tabBarController = UITabBarController()
         tabBarController.tabBar.backgroundColor = .white
+        tabBarController.delegate = self
         self.tabBarController = tabBarController
 
         let listCoordinator = SharedListCoordinator(state: .allItems, viewModel: sharedViewModel)
@@ -59,5 +60,16 @@ final class TabBarCoordinator: NSObject, Coordinator {
             image: normalImage,
             selectedImage: selectedImage
         )
+    }
+}
+
+extension TabBarCoordinator: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        for coordinator in childCoordinators {
+            if let sharedCoordinator = coordinator as? SharedListCoordinator,
+               let sharedVC = sharedCoordinator.navigationController.viewControllers.first as? SharedListViewController {
+                sharedVC.disableMultiselection()
+            }
+        }
     }
 }

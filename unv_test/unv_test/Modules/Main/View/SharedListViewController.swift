@@ -32,9 +32,6 @@ class SharedListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let tabBarController = self.tabBarController {
-            tabBarController.delegate = self
-        }
         view = mainView
         initViewController()
     }
@@ -63,12 +60,7 @@ class SharedListViewController: UIViewController {
 
         dataSource
             .map { $0.isEmpty }
-            .bind(to: mainView.multiplyActionButton.rx.isHidden)
-            .disposed(by: disposeBag)
-
-        dataSource
-            .map { $0.isEmpty }
-            .bind(to: mainView.infoButton.rx.isHidden)
+            .bind(to: mainView.multiplyActionButton.rx.isHidden, mainView.infoButton.rx.isHidden)
             .disposed(by: disposeBag)
 
         mainView.tableView.rx.itemSelected
@@ -112,7 +104,7 @@ class SharedListViewController: UIViewController {
         mainView.cancelButton.rx.tap
             .subscribe(onNext: { [weak self] in
                 guard let self = self else { return }
-                cancelButtonAction()
+                disableMultiselection()
             })
             .disposed(by: disposeBag)
 
@@ -126,11 +118,11 @@ class SharedListViewController: UIViewController {
 }
 
 extension SharedListViewController {
-    private func cancelButtonAction() {
-        viewModel.selectedItems.removeAll()
-        mainView.tableView.reloadData()
+    func disableMultiselection() {
         viewModel.isHandleMultiplyElementsSelected = false
+        viewModel.selectedItems.removeAll()
         mainView.updateView(with: viewModel.isHandleMultiplyElementsSelected)
+        mainView.tableView.reloadData()
     }
 
     private func infoButtonAction() {
@@ -177,11 +169,5 @@ extension SharedListViewController: UITableViewDelegate {
 
         let configuration = UISwipeActionsConfiguration(actions: [favouriteAction])
         return configuration
-    }
-}
-
-extension SharedListViewController: UITabBarControllerDelegate {
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        cancelButtonAction()
     }
 }
